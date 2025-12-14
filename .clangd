@@ -1,0 +1,7 @@
+# .clangd
+
+CompileFlags:
+  Add:
+    - -std=gnu++20
+
+# end

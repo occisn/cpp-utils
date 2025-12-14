@@ -1,0 +1,19 @@
+# c-utils
+
+Personal utilities for C++
+
+This project is a kind of shelf providing many functions. With a few clearly indicated exceptions, these functions are self-supporting. They do not require any dependency, or to be built/integrated in any specific way. Because "the truly reusable code is the one that you can simply copy-paste".
+
+A test suite is proposed.
+
+When relevant, functions are illustrated with associated `SHOW_xxx` functions.
+
+File **integer_primes.cpp**  
+   - function `largest_prime_factor__long_long`
+      
+File **durations.cpp**  
+   - function `measure_duration`
+
+Any comment? Open an [issue](https://github.com/occisn/cpp-utils/issues), or start a discussion [here](https://github.com/occisn/cpp-utils/discussions) or [at profile level](https://github.com/occisn/occisn/discussions).
+
+(end of README)

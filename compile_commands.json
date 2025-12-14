@@ -1,0 +1,50 @@
+[
+ {
+  "directory": "c:\\Users\\nicol\\Dropbox\\local-repos\\cpp-utils",
+  "arguments": [
+   "g++",
+   "-Wall",
+   "-Wextra",
+   "-std=c++17",
+   "-Isrc",
+   "-Iinclude",
+   "-c",
+   "src/duration.cpp",
+   "-o",
+   "build/duration.o"
+  ],
+  "file": "src/duration.cpp"
+ },
+ {
+  "directory": "c:\\Users\\nicol\\Dropbox\\local-repos\\cpp-utils",
+  "arguments": [
+   "g++",
+   "-Wall",
+   "-Wextra",
+   "-std=c++17",
+   "-Isrc",
+   "-Iinclude",
+   "-c",
+   "src/integers_primes.cpp",
+   "-o",
+   "build/integers_primes.o"
+  ],
+  "file": "src/integers_primes.cpp"
+ },
+ {
+  "directory": "c:\\Users\\nicol\\Dropbox\\local-repos\\cpp-utils",
+  "arguments": [
+   "g++",
+   "-Wall",
+   "-Wextra",
+   "-std=c++17",
+   "-Isrc",
+   "-Iinclude",
+   "-c",
+   "src/main.cpp",
+   "-o",
+   "build/main.o"
+  ],
+  "file": "src/main.cpp"
+ }
+]
