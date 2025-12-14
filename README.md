@@ -1,4 +1,4 @@
-# c-utils
+# cpp-utils
 
 Personal utilities for C++
 
