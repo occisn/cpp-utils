@@ -3,7 +3,6 @@
 
 int measure_duration(void)
 {
-
   auto start = std::chrono::high_resolution_clock::now();
   // do something
   auto end = std::chrono::high_resolution_clock::now();
