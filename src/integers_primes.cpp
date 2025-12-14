@@ -1,8 +1,17 @@
 #include "integers_primes.hpp"
 #include <iostream>
 
-/* Calculate largest prime factor of n (long long)
- (v1 available in occisn/cpp-utils GitHub repository)*/
+/**
+ * Finds the largest prime factor of a given number.
+ *
+ * Uses trial division with optimization: first removes all factors of 2 and 3,
+ * then checks only numbers of the form 6k±1, since all primes > 3 have this form.
+ *
+ * @param n The number to factorize (must be positive)
+ * @return The largest prime factor of n, or 0 if n is 0 or 1
+ *
+ * (v1 available in occisn/cpp-utils GitHub repository)
+ */
 long long largest_prime_factor(long long n)
 {
   long long largest = 0;
