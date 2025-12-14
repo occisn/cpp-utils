@@ -54,4 +54,11 @@ long long largest_prime_factor(long long n)
   return largest;
 }
 
+int SHOW__largest_prime_factor(void)
+{
+  const long long n = 10001; 
+  std::cout << "Largest prime factor of " << n << " is " << largest_prime_factor(n) << "." << std::endl;
+  return EXIT_SUCCESS;
+}
+
 // end
