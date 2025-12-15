@@ -12,6 +12,11 @@ int main()
   std::cout << "SHOW__largest_prime_factor" << std::endl;
   std::cout << "--------------------------" << std::endl;
   SHOW__largest_prime_factor();
+
+  std::cout << std::endl;
+  std::cout << "SHOW_sieve_eratosthenes" << std::endl;
+  std::cout << "-----------------------" << std::endl;
+  SHOW_sieve_eratosthenes();
   
   return EXIT_SUCCESS;
 }

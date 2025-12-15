@@ -9,8 +9,9 @@ A test suite is proposed.
 When relevant, functions are illustrated with associated `SHOW_xxx` functions.
 
 File **integer_primes.cpp**  
-   - function `largest_prime_factor__long_long`
-      
+   - function `largest_prime_factor__long_long`  
+   - function `sieve_eratosthenes`
+   
 File **durations.cpp**  
    - function `measure_duration`
 

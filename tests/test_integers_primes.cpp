@@ -1,5 +1,6 @@
 #include "integers_primes.hpp"
 #include <catch_amalgamated.hpp>
+#include <vector>
 #include <cstdint>
 
 TEST_CASE("Largest prime factor calculation", "[primes]")
@@ -132,5 +133,74 @@ TEST_CASE("Largest prime factor calculation", "[primes]")
     REQUIRE(largest_prime_factor(43 * 5) == 43);
   }
 }
+
+
+TEST_CASE("Sieve of Eratosthenes produces correct primality results", "[sieve]")
+{
+    SECTION("Returns empty result for n < 2")
+    {
+        REQUIRE(sieve_eratosthenes(0).empty());
+        REQUIRE(sieve_eratosthenes(1).empty());
+        REQUIRE(sieve_eratosthenes(-5).empty());
+    }
+
+    SECTION("Handles smallest valid upper bound (n = 2)")
+    {
+        auto is_prime = sieve_eratosthenes(2);
+
+        REQUIRE(is_prime.size() == 2);
+        REQUIRE_FALSE(is_prime[0]);
+        REQUIRE_FALSE(is_prime[1]);
+    }
+
+    SECTION("Correctly identifies primes and composites below 10")
+    {
+        auto is_prime = sieve_eratosthenes(10);
+
+        REQUIRE(is_prime.size() == 10);
+
+        REQUIRE_FALSE(is_prime[0]);
+        REQUIRE_FALSE(is_prime[1]);
+
+        REQUIRE(is_prime[2]);
+        REQUIRE(is_prime[3]);
+        REQUIRE_FALSE(is_prime[4]);
+        REQUIRE(is_prime[5]);
+        REQUIRE_FALSE(is_prime[6]);
+        REQUIRE(is_prime[7]);
+        REQUIRE_FALSE(is_prime[8]);
+        REQUIRE_FALSE(is_prime[9]);
+    }
+
+    SECTION("Marks known composite numbers as non-prime")
+    {
+        auto is_prime = sieve_eratosthenes(50);
+
+        std::vector<long long> composites = {
+            4, 6, 8, 9, 10, 12, 14, 15,
+            16, 18, 20, 21, 22, 24, 25
+        };
+
+        for (long long c : composites) {
+            REQUIRE_FALSE(is_prime[c]);
+        }
+    }
+
+    SECTION("Finds the correct number of primes below 100")
+    {
+        auto is_prime = sieve_eratosthenes(100);
+
+        long long count = 0;
+        for (long long i = 2; i < 100; ++i) {
+            if (is_prime[i]) {
+                ++count;
+            }
+        }
+
+        // There are exactly 25 primes less than 100
+        REQUIRE(count == 25);
+    }
+}
+
 
 // end
