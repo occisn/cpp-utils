@@ -8,12 +8,20 @@ A test suite is proposed.
 
 When relevant, functions are illustrated with associated `SHOW_xxx` functions.
 
+File **dates_and_times.cpp**  
+   - function `parse_date_time`
+
+File **doubles.cpp**  
+   - function `parse_double`
+
+File **durations.cpp**  
+   - function `measure_duration`
+
 File **integer_primes.cpp**  
    - function `largest_prime_factor__long_long`  
    - function `sieve_eratosthenes`
    
-File **durations.cpp**  
-   - function `measure_duration`
+   
 
 Any comment? Open an [issue](https://github.com/occisn/cpp-utils/issues), or start a discussion [here](https://github.com/occisn/cpp-utils/discussions) or [at profile level](https://github.com/occisn/occisn/discussions).
 

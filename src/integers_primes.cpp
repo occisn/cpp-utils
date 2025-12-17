@@ -14,7 +14,7 @@
  *
  * (v1 available in occisn/cpp-utils GitHub repository)
  */
-constexpr long long largest_prime_factor(long long n)
+long long largest_prime_factor(long long n)
 {
   if (n <= 1) {
     return 0;
