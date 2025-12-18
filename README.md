@@ -9,7 +9,9 @@ A test suite is proposed.
 When relevant, functions are illustrated with associated `SHOW_xxx` functions.
 
 File **dates_and_times.cpp**  
-   - function `parse_date_time`
+   - function `parse_date_time_UTC`  
+   - function `format_date_time_UTC`  
+   - function `print_date_time_UTC`
 
 File **doubles.cpp**  
    - function `parse_double`
