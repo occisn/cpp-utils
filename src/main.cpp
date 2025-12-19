@@ -54,6 +54,12 @@ int main()
   std::cout << "-------------------" << std::endl;
   std::cout << "Current path: " << std::filesystem::current_path() << std::endl;
   std::cout << "Number of lines in 'src/main.c' file: " << count_lines("./src/main.cpp", false) << std::endl;
+
+  std::cout << std::endl;
+  std::cout << "integers_digits / reverse_number" << std::endl;
+  std::cout << "--------------------------------" << std::endl;
+  std::cout << "123 --> " << reverse_number(123) << std::endl;
+
   std::cout << std::endl;
   std::cout << "integers_primes / SHOW__largest_prime_factor" << std::endl;
   std::cout << "--------------------------------------------" << std::endl;
