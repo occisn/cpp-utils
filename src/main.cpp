@@ -2,12 +2,14 @@
 #include "doubles.hpp"
 #include "duration.hpp"
 #include "files.hpp"
+#include "integers_digits.hpp"
 #include "integers_primes.hpp"
-#include <cstdlib>
-#include <iostream>
-#include <ctime>
-#include <string>
 #include <chrono>
+#include <cstdlib>
+#include <ctime>
+#include <filesystem>
+#include <iostream>
+#include <string>
 
 int main()
 {
@@ -24,19 +26,19 @@ int main()
   std::cout << "--------------------------------------" << std::endl;
   std::tm tm{};
   tm.tm_year = 2005 - 1900;
-  tm.tm_mon  = 3;   // April
+  tm.tm_mon = 3; // April
   tm.tm_mday = 3;
   tm.tm_hour = 6;
-  tm.tm_min  = 7;
-  tm.tm_sec  = 8;
+  tm.tm_min = 7;
+  tm.tm_sec = 8;
 #if defined(_WIN32)
-        std::time_t tt = _mkgmtime(&tm);
+  std::time_t tt = _mkgmtime(&tm);
 #else
-        std::time_t tt = timegm(&tm);
+  std::time_t tt = timegm(&tm);
 #endif
-        auto tp = std::chrono::system_clock::from_time_t(tt);
+  auto tp = std::chrono::system_clock::from_time_t(tt);
   std::cout << format_date_time_UTC(tp) << std::endl;
-  
+
   std::cout << std::endl;
   std::cout << "doubles / parse_double" << std::endl;
   std::cout << "----------------------" << std::endl;
@@ -47,6 +49,11 @@ int main()
   std::cout << "---------------------------" << std::endl;
   measure_duration();
 
+  std::cout << std::endl;
+  std::cout << "files / count_lines" << std::endl;
+  std::cout << "-------------------" << std::endl;
+  std::cout << "Current path: " << std::filesystem::current_path() << std::endl;
+  std::cout << "Number of lines in 'src/main.c' file: " << count_lines("./src/main.cpp", false) << std::endl;
   std::cout << std::endl;
   std::cout << "integers_primes / SHOW__largest_prime_factor" << std::endl;
   std::cout << "--------------------------------------------" << std::endl;
