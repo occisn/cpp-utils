@@ -1,6 +1,7 @@
 #include "dates_and_times.hpp"
 #include "doubles.hpp"
 #include "duration.hpp"
+#include "files.hpp"
 #include "integers_primes.hpp"
 #include <cstdlib>
 #include <iostream>
