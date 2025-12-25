@@ -17,7 +17,8 @@ File **doubles.cpp**
    - function `parse_double`
 
 File **durations.cpp**  
-   - function `measure_duration`
+   - function `SHOW__measure_duration`  
+   - functions `SHOW__benchmark_5_times_A` and `SHOW__benchmark_5_times_B`
 
 File **files.cpp**  
    - function `count_lines`

@@ -47,7 +47,17 @@ int main()
   std::cout << std::endl;
   std::cout << "duration / measure_duration" << std::endl;
   std::cout << "---------------------------" << std::endl;
-  measure_duration();
+  SHOW__measure_duration();
+
+  std::cout << std::endl;
+  std::cout << "duration / benchmark x 5 (A)" << std::endl;
+  std::cout << "---------------------------" << std::endl;
+  SHOW__benchmark_5_times_A();
+
+  std::cout << std::endl;
+  std::cout << "duration / benchmark x 5 (B)" << std::endl;
+  std::cout << "---------------------------" << std::endl;
+  mSHOW__benchmark_5_times_B();
 
   std::cout << std::endl;
   std::cout << "files / count_lines" << std::endl;
