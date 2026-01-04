@@ -29,6 +29,15 @@ File **integer_digits.cpp**
 File **integer_primes.cpp**  
    - function `largest_prime_factor__long_long`  
    - function `sieve_eratosthenes`
+   
+File **parallelism_with_async.cpp**  
+   - function `SHOW_parallelism_with_async`
+
+File **parallelism_with_openmp.cpp**  
+   - function `SHOW_parallelism_with_openmp_1` and `_2`
+
+File **parallelism_with_threads.cpp**  
+   - function `SHOW_parallelism_with_threads`
 
 Any comment? Open an [issue](https://github.com/occisn/cpp-utils/issues), or start a discussion [here](https://github.com/occisn/cpp-utils/discussions) or [at profile level](https://github.com/occisn/occisn/discussions).
 

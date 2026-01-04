@@ -1,11 +1,55 @@
 [
  {
-  "directory": "c:\\Users\\nicol\\Dropbox\\local-repos\\cpp-utils",
+  "directory": "c:\\Users\\noccis\\Dropbox\\local-repos\\cpp-utils",
   "arguments": [
    "g++",
    "-Wall",
    "-Wextra",
    "-std=c++17",
+   "-O3",
+   "-fopenmp",
+   "-pthread",
+   "-march=native",
+   "-Isrc",
+   "-Iinclude",
+   "-c",
+   "src/dates_and_times.cpp",
+   "-o",
+   "build/dates_and_times.o"
+  ],
+  "file": "src/dates_and_times.cpp"
+ },
+ {
+  "directory": "c:\\Users\\noccis\\Dropbox\\local-repos\\cpp-utils",
+  "arguments": [
+   "g++",
+   "-Wall",
+   "-Wextra",
+   "-std=c++17",
+   "-O3",
+   "-fopenmp",
+   "-pthread",
+   "-march=native",
+   "-Isrc",
+   "-Iinclude",
+   "-c",
+   "src/doubles.cpp",
+   "-o",
+   "build/doubles.o"
+  ],
+  "file": "src/doubles.cpp"
+ },
+ {
+  "directory": "c:\\Users\\noccis\\Dropbox\\local-repos\\cpp-utils",
+  "arguments": [
+   "g++",
+   "-Wall",
+   "-Wextra",
+   "-std=c++17",
+   "-O3",
+   "-fopenmp",
+   "-pthread",
+   "-march=native",
    "-Isrc",
    "-Iinclude",
    "-c",
@@ -16,12 +60,56 @@
   "file": "src/duration.cpp"
  },
  {
-  "directory": "c:\\Users\\nicol\\Dropbox\\local-repos\\cpp-utils",
+  "directory": "c:\\Users\\noccis\\Dropbox\\local-repos\\cpp-utils",
   "arguments": [
    "g++",
    "-Wall",
    "-Wextra",
    "-std=c++17",
+   "-O3",
+   "-fopenmp",
+   "-pthread",
+   "-march=native",
+   "-Isrc",
+   "-Iinclude",
+   "-c",
+   "src/files.cpp",
+   "-o",
+   "build/files.o"
+  ],
+  "file": "src/files.cpp"
+ },
+ {
+  "directory": "c:\\Users\\noccis\\Dropbox\\local-repos\\cpp-utils",
+  "arguments": [
+   "g++",
+   "-Wall",
+   "-Wextra",
+   "-std=c++17",
+   "-O3",
+   "-fopenmp",
+   "-pthread",
+   "-march=native",
+   "-Isrc",
+   "-Iinclude",
+   "-c",
+   "src/integers_digits.cpp",
+   "-o",
+   "build/integers_digits.o"
+  ],
+  "file": "src/integers_digits.cpp"
+ },
+ {
+  "directory": "c:\\Users\\noccis\\Dropbox\\local-repos\\cpp-utils",
+  "arguments": [
+   "g++",
+   "-Wall",
+   "-Wextra",
+   "-std=c++17",
+   "-O3",
+   "-fopenmp",
+   "-pthread",
+   "-march=native",
    "-Isrc",
    "-Iinclude",
    "-c",
@@ -32,12 +120,16 @@
   "file": "src/integers_primes.cpp"
  },
  {
-  "directory": "c:\\Users\\nicol\\Dropbox\\local-repos\\cpp-utils",
+  "directory": "c:\\Users\\noccis\\Dropbox\\local-repos\\cpp-utils",
   "arguments": [
    "g++",
    "-Wall",
    "-Wextra",
    "-std=c++17",
+   "-O3",
+   "-fopenmp",
+   "-pthread",
+   "-march=native",
    "-Isrc",
    "-Iinclude",
    "-c",
@@ -46,5 +138,25 @@
    "build/main.o"
   ],
   "file": "src/main.cpp"
+ },
+ {
+  "directory": "c:\\Users\\noccis\\Dropbox\\local-repos\\cpp-utils",
+  "arguments": [
+   "g++",
+   "-Wall",
+   "-Wextra",
+   "-std=c++17",
+   "-O3",
+   "-fopenmp",
+   "-pthread",
+   "-march=native",
+   "-Isrc",
+   "-Iinclude",
+   "-c",
+   "src/parallelism_with_threads.cpp",
+   "-o",
+   "build/parallelism_with_threads.o"
+  ],
+  "file": "src/parallelism_with_threads.cpp"
  }
 ]

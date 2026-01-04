@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++17 -O3
+CXXFLAGS = -Wall -Wextra -std=c++17 -O3 -fopenmp -pthread -march=native
 SRCDIR = src
 TESTDIR = tests
 BUILDDIR = build

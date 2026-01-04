@@ -4,6 +4,9 @@
 #include "files.hpp"
 #include "integers_digits.hpp"
 #include "integers_primes.hpp"
+#include "parallelism_with_async.hpp"
+#include "parallelism_with_openmp.hpp"
+#include "parallelism_with_threads.hpp"
 #include <chrono>
 #include <cstdlib>
 #include <ctime>
@@ -57,7 +60,7 @@ int main()
   std::cout << std::endl;
   std::cout << "duration / benchmark x 5 (B)" << std::endl;
   std::cout << "---------------------------" << std::endl;
-  mSHOW__benchmark_5_times_B();
+  SHOW__benchmark_5_times_B();
 
   std::cout << std::endl;
   std::cout << "files / count_lines" << std::endl;
@@ -80,5 +83,21 @@ int main()
   std::cout << "-----------------------------------------" << std::endl;
   SHOW_sieve_eratosthenes();
 
+   std::cout << std::endl;
+  std::cout << "parallelism / SHOW_parallelism_with_async" << std::endl;
+  std::cout << "------------------------------------------" << std::endl;
+  SHOW_parallelism_with_async(1000000000); // 1 billion
+
+  std::cout << std::endl;
+  std::cout << "parallelism / SHOW_parallelism_with_openmp" << std::endl;
+  std::cout << "------------------------------------------" << std::endl;
+  SHOW_parallelism_with_openmp_1(1000000000); // 1 billion
+  SHOW_parallelism_with_openmp_2(1000000000); // 1 billion
+
+  std::cout << std::endl;
+  std::cout << "parallelism / SHOW_parallelism_with_threads" << std::endl;
+  std::cout << "-------------------------------------------" << std::endl;
+  SHOW_parallelism_with_threads(1000000000); // 1 billion
+  
   return EXIT_SUCCESS;
 }
