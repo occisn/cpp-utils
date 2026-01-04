@@ -53,6 +53,7 @@ void SHOW__benchmark_5_times_A(void)
     std::cout << "Run " << (i + 1) << " / " << nb_runs << ": "
               << std::fixed << std::setprecision(6) << duration_sec
               << " seconds" << std::endl;
+    std::cout.flush();
     durations.push_back(duration_sec);
   }
 
@@ -92,7 +93,8 @@ double calculate_pi_leibniz_B(long n)
 
   std::cout << "Leibniz: pi = " << std::fixed << std::setprecision(6)
             << tmp << " (in " << duration_sec << " seconds)" << std::endl;
-
+  std::cout.flush();
+  
   return duration_sec;
 }
 
@@ -113,6 +115,7 @@ void SHOW__benchmark_5_times_B(void)
     std::cout << "Run " << (i + 1) << " / " << nb_runs << ": "
               << std::fixed << std::setprecision(6) << duration
               << " seconds" << std::endl;
+    std::cout.flush();
     durations.push_back(duration);
   }
 
